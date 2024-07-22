@@ -1,0 +1,61 @@
+body {
+    background-image: url(howl.jpg);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Add this for positioning */
+    min-height: 100vh; /* Ensure full height for centering */
+}
+
+h1 {
+    color: #333;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 100px 0 30px;
+}
+
+.icons a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.icons img {
+    width: 200px;
+    height: auto;
+}
+
+.icons img:hover {
+    opacity: 0.9;
+}
+
+.home-icon {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.home-icon img {
+    width: 50px; /* Set the desired size */
+    height: auto;
+}
+.home-icon:hover {
+    transform: translateX(-50%) translateY(-10px); /* Move up on hover */
+    opacity: 0.8; /* Fade effect on hover */
+}
